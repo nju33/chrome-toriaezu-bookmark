@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+  "name": "__MSG_appName__",
+  "short_name": "とりブ",
+  "description": "__MSG_appDesc__",
+  "version": "1.0.0.0",
+  "default_locale": "ja",
+
+  "permissions": [
+    "http://*/",
+    "https://*/",
+    "bookmarks",
+    "contextMenus",
+    "storage",
+    "tabs"
+  ],
+
+  "icons": {
+    "16": "icon/icon_16.png",
+    "48": "icon/icon_48.png",
+    "128": "icon/icon_128.png"
+  },
+
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
+
+  "browser_action": {
+    "default_icon": {
+      "38": "icon/icon_38.png"
+    },
+    "default_title": "__MSG_appName__"
+  },
+
+  "background": {
+    "persistent": false,
+    "scripts": ["script/lib/lib.js", "script/background.js"]
+  }
+}
